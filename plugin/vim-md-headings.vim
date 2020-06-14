@@ -20,7 +20,7 @@ function! s:HeadingIncrease()
 		execute 'silent! substitute/' . s:levelRegexpDict[l:level] . '/' .
 					\ repeat('#', l:level + l:levelDelta) . '/' . l:flags
 	endfor
-	execute 'silent! substitute/\v^[A-Za-z0-9]/\#\ &/g'
+	execute 'silent! substitute/\v^\k/\#\ &/g'
 endfunction
 
 function! s:HeadingDecrease()
