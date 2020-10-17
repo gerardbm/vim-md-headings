@@ -37,7 +37,9 @@ endfunction
 
 if g:vim_heading_maps == 1
 	augroup markdown
-		autocmd FileType markdown nnoremap <silent> = :call <SID>HeadingIncrease()<CR>
-		autocmd FileType markdown nnoremap <silent> _ :call <SID>HeadingDecrease()<CR>
+		autocmd FileType markdown,liquid
+					\ nnoremap <silent> = :call <SID>HeadingIncrease()<CR>
+		autocmd FileType markdown,liquid
+					\ nnoremap <silent> _ :call <SID>HeadingDecrease()<CR>
 	augroup end
 endif
