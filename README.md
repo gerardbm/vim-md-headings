@@ -2,7 +2,7 @@
 
 This plugin introduces an elegant way to handle markdown headings {h1-h6} from the Normal mode on the current line.
 
-Default mappings (only in markdown/liquid files):
+Default mappings (only in markdown files):
 
 ```viml
 nnoremap <silent> = :call <SID>HeadingIncrease()<CR>
